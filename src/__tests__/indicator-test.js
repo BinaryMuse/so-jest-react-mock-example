@@ -7,9 +7,9 @@ var React, IndicatorComponent, Indicator, TestUtils;
 describe('Indicator', function() {
   beforeEach(function() {
     React = require('react/addons');
+    TestUtils = React.addons.TestUtils;
     // Notice this is the Indicator *class*...
     IndicatorComponent = require('../indicator.js');
-    TestUtils = React.addons.TestUtils;
     // ...and this is an Indicator *instance* (rendered into the DOM).
     Indicator = TestUtils.renderIntoDocument(<IndicatorComponent />);
     // Jest will mock the functions on this module automatically for us.
